@@ -11,7 +11,7 @@ function CreateUser() {
   }, []);
 
   const fetchUserList = () => {
-    axios.get('http://localhost:5000/api/view/users')
+    axios.get('/api/view/users')
       .then((response) => {
         setUsers(response.data);
         setLoading(false);
